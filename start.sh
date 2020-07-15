@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S glib2 json-glib libsoup dbus-glib polkit vte3 gtk3 libnotify desktop-file-utils gnutls git appstream-glib archlinux-appstream-data pacman
+sudo pacman -S glib2 json-glib libsoup dbus-glib polkit vte3 gtk3 libnotify desktop-file-utils gnutls git appstream-glib archlinux-appstream-data pacman fakeroot
 makepkg -sic PKGBUILD
 sudo sed --in-place "s/#EnableAUR/EnableAUR/" "/etc/pamac.conf"
 sudo pacman -S nvidia
